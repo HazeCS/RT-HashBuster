@@ -1,3 +1,5 @@
+#!/bin/python3
+
 import hashlib, argparse, time, os
 from random_word import RandomWords
 from colorama import Fore
