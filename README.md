@@ -1,7 +1,7 @@
 
 # Hash Buster
 
-Hash Buster is a Python tool for generating Rainbow Tables and cracking hashes with them. It supports the following hash algorithms: md5, sha1, sha224, sha256, sha384, sha512.
+Hash Buster is a Python tool for generating Rainbow Tables and cracking hashes using Rainbow Tables. It supports the following hash algorithms: md5, sha1, sha224, sha256, sha384, sha512.
 
 ## Usage
 Hash Buster can be used in two modes: build and brute.
