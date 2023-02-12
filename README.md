@@ -19,7 +19,7 @@ chmod +x install.sh
 After installation, run `hashbuster` to use the program.
 
 ## Usage
-Hash Buster can be used in two modes: build and brute.
+Hash Buster can be used in a few modes: build, brute, chechsum, hashid and hash
 
 ## Build mode
 
