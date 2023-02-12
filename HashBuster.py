@@ -11,9 +11,9 @@ parser_brute.add_argument('-H', '--hash', required=True, help='Targeted hash')
 parser_brute.add_argument('-rt', '--rainbowtable', required=True, help='Rainbow Table list')
 parser_brute.add_argument('-v', '--verbose', default=False, action='store_true', help='Verbose outputs, slows program')
 
-parser_build = subparsers.add_parser('build', help='Generate rainbow tables from a wordlist.')
-parser_build.add_argument('-o', '--output', required=True, help='Output file for rainbow table list')
-parser_build.add_argument('-w', '--wordlist', required=True, help='Wordlist to generate rainbow table from')
+parser_build = subparsers.add_parser('build', help='Generate Rainbow Tables from a wordlist.')
+parser_build.add_argument('-o', '--output', required=True, help='Output file for Rainbow Table list')
+parser_build.add_argument('-w', '--wordlist', required=True, help='Wordlist to generate Rainbow Table from')
 parser_build.add_argument('-H', '--hash', required=True, choices=HASHES, help='Hash algorithm')
 parser_build.add_argument('-v', '--verbose', default=False, action='store_true', help='Verbose outputs, slows program')
 
