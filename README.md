@@ -7,6 +7,9 @@ Hash Buster is a Python tool for generating Rainbow Tables and cracking hashes w
 Hash Buster can be used in two modes: build and brute.
 
 ### Build mode
+
+---
+
 In build mode, Hash Buster generates a Rainbow Table from a given wordlist and a hash algorithm, and saves it to an output file. To use build mode, run the following command:
 
 ```
@@ -19,6 +22,9 @@ python hash_buster.py build -o [output_file] -w [wordlist_file] -H [hash_algorit
 ```
 
 ### Brute mode
+
+---
+
 In brute mode, Hash Buster searches a Rainbow Table for a given hash and outputs the corresponding plaintext. To use brute mode, run the following command:
 
 ```
@@ -30,6 +36,8 @@ python hash_buster.py brute -rt [rainbow_table_file] -H [hash] [-v]
 ```
 
 ### Example
+
+---
 
 Here is an example usage of Hash Buster in build mode:
 
@@ -51,5 +59,7 @@ Hash Buster requires the following Python modules to be installed:
     hashlib
 
 ### License
+
+---
 
 Hash Buster is licensed under the MIT License. See the LICENSE file for details.
