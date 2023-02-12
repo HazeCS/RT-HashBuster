@@ -5,6 +5,8 @@ Hash Buster is a Python tool for generating Rainbow Tables and cracking hashes u
 
 Find my Rainbow Tables list here - https://mega.nz/folder/ys8VyY5T#kZsRbSZCL9WS4T3GEoPo6g
 
+![image](https://user-images.githubusercontent.com/93849885/218319656-99b5b446-2f4d-4d38-bd7b-d3f764fd1626.png)
+
 ## Usage
 Hash Buster can be used in two modes: build and brute.
 
