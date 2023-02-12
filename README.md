@@ -13,7 +13,7 @@ Hash Buster can be used in two modes: build and brute.
 In build mode, Hash Buster generates a Rainbow Table from a given wordlist and a hash algorithm, and saves it to an output file. To use build mode, run the following command:
 
 ```
-python hash_buster.py build -o [output_file] -w [wordlist_file] -H [hash_algorithm] [-v]
+python3 hash_buster.py build -o [output_file] -w [wordlist_file] -H [hash_algorithm] [-v]
 
     [output_file]: The name of the output file for the generated Rainbow Table.
     [wordlist_file]: The name of the wordlist file to generate the Rainbow Table from.
@@ -26,7 +26,7 @@ python hash_buster.py build -o [output_file] -w [wordlist_file] -H [hash_algorit
 In brute mode, Hash Buster searches a Rainbow Table for a given hash and outputs the corresponding plaintext. To use brute mode, run the following command:
 
 ```
-python hash_buster.py brute -rt [rainbow_table_file] -H [hash] [-v]
+python3 hash_buster.py brute -rt [rainbow_table_file] -H [hash] [-v]
 
     [rainbow_table_file]: The name of the Rainbow Table file to search.
     [hash]: The hash to search for.
