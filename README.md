@@ -15,7 +15,7 @@ Hash Buster can be used in two modes: build and brute.
 In build mode, Hash Buster generates a Rainbow Table from a given wordlist and a hash algorithm, and saves it to an output file. To use build mode, run the following command:
 
 ```
-python3 hash_buster.py build -o [output_file] -w [wordlist_file] -H [hash_algorithm] [-v]
+python3 hashbuster.py build -o [output_file] -w [wordlist_file] -H [hash_algorithm] [-v]
 
     [output_file]: The name of the output file for the generated Rainbow Table.
     [wordlist_file]: The name of the wordlist file to generate the Rainbow Table from.
@@ -28,11 +28,44 @@ python3 hash_buster.py build -o [output_file] -w [wordlist_file] -H [hash_algori
 In brute mode, Hash Buster searches a Rainbow Table for a given hash and outputs the corresponding plaintext. To use brute mode, run the following command:
 
 ```
-python3 hash_buster.py brute -rt [rainbow_table_file] -H [hash] [-v]
+python3 hashbuster.py brute -rt [rainbow_table_file] -H [hash] [-v]
 
     [rainbow_table_file]: The name of the Rainbow Table file to search.
     [hash]: The hash to search for.
     -v: (Optional) Enable verbose output.
+```
+
+## Checksum mode
+
+In checksum mode, Hash Buster will calculate the checksum of a chosen file. To use checksum mode, run the following command:
+
+```
+python3 hashbuster.py checksum -f [file] -H [hash_algorithm]
+    
+    [file]: File path to calculate checksum
+    [hash_algorithm]: The hash algorithm to use for calculating the checksum
+```
+
+## HashID mode
+
+In hashid mode, Hash Buster will use HashID to identify a hash. To use hashid mode, run the following command:
+
+```
+python3 hashbuster.py hashid -H [hash]
+
+    [hash]: The hash to identify
+```
+
+## Hash mode
+
+In hash mode, Hash Buster will hash a string. To use hash mode, run the following command:
+
+```
+python3 hashbuster.py hash [-rw] [-t TEXT] -H [hash_algorithm]
+    
+    [rw]: Random Word
+    [t]: Text
+    [hash_algoritm]: The hash algorithm to use for the hashing operation
 ```
 
 ## Example
