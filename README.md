@@ -7,6 +7,17 @@ Find my Rainbow Tables list here - https://mega.nz/folder/ys8VyY5T#kZsRbSZCL9WS4
 
 ![image](https://user-images.githubusercontent.com/93849885/218319656-99b5b446-2f4d-4d38-bd7b-d3f764fd1626.png)
 
+## Install
+
+Run the install script to install Hash Buster.
+
+```
+chmod +x install.sh
+./install.sh
+```
+
+After installation, run `hashbuster` to use the program.
+
 ## Usage
 Hash Buster can be used in two modes: build and brute.
 
@@ -15,7 +26,7 @@ Hash Buster can be used in two modes: build and brute.
 In build mode, Hash Buster generates a Rainbow Table from a given wordlist and a hash algorithm, and saves it to an output file. To use build mode, run the following command:
 
 ```
-python3 hashbuster.py build -o [output_file] -w [wordlist_file] -H [hash_algorithm] [-v]
+hashbuster build -o [output_file] -w [wordlist_file] -H [hash_algorithm] [-v]
 
     [output_file]: The name of the output file for the generated Rainbow Table.
     [wordlist_file]: The name of the wordlist file to generate the Rainbow Table from.
@@ -28,7 +39,7 @@ python3 hashbuster.py build -o [output_file] -w [wordlist_file] -H [hash_algorit
 In brute mode, Hash Buster searches a Rainbow Table for a given hash and outputs the corresponding plaintext. To use brute mode, run the following command:
 
 ```
-python3 hashbuster.py brute -rt [rainbow_table_file] -H [hash] [-v]
+hashbuster brute -rt [rainbow_table_file] -H [hash] [-v]
 
     [rainbow_table_file]: The name of the Rainbow Table file to search.
     [hash]: The hash to search for.
@@ -40,7 +51,7 @@ python3 hashbuster.py brute -rt [rainbow_table_file] -H [hash] [-v]
 In checksum mode, Hash Buster will calculate the checksum of a chosen file. To use checksum mode, run the following command:
 
 ```
-python3 hashbuster.py checksum -f [file] -H [hash_algorithm]
+hashbuster checksum -f [file] -H [hash_algorithm]
     
     [file]: File path to calculate checksum
     [hash_algorithm]: The hash algorithm to use for calculating the checksum
@@ -51,7 +62,7 @@ python3 hashbuster.py checksum -f [file] -H [hash_algorithm]
 In hashid mode, Hash Buster will use HashID to identify a hash. To use hashid mode, run the following command:
 
 ```
-python3 hashbuster.py hashid -H [hash]
+hashbuster hashid -H [hash]
 
     [hash]: The hash to identify
 ```
@@ -61,7 +72,7 @@ python3 hashbuster.py hashid -H [hash]
 In hash mode, Hash Buster will hash a string. To use hash mode, run the following command:
 
 ```
-python3 hashbuster.py hash [-rw] [-t TEXT] -H [hash_algorithm]
+hashbuster hash [-rw] [-t TEXT] -H [hash_algorithm]
     
     [rw]: (Optional) Random Word
     [t]: (Optional) Text
@@ -72,13 +83,13 @@ python3 hashbuster.py hash [-rw] [-t TEXT] -H [hash_algorithm]
 
 Here is an example usage of Hash Buster in build mode:
 
-`python hash_buster.py build -o my_table.rt -w my_wordlist.txt -H sha256`
+`hashbuster build -o my_table.rt -w my_wordlist.txt -H sha256`
 
 This command generates a Rainbow Table from the file my_wordlist.txt using the sha256 hash algorithm, and saves it to the file my_table.rt.
 
 And here is an example usage of Hash Buster in brute mode:
 
-`python hash_buster.py brute -rt my_table.rt -H 5f4dcc3b5aa765d61d8327deb882cf99`
+`hashbuster brute -rt my_table.rt -H 5f4dcc3b5aa765d61d8327deb882cf99`
 
 This command searches the Rainbow Table in the file my_table.rt for the hash 5f4dcc3b5aa765d61d8327deb882cf99 and outputs the corresponding plaintext, if found.
 Dependencies
