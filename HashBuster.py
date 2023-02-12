@@ -3,7 +3,7 @@ from colorama import Fore
 
 HASHES = ['md5', 'sha1', 'sha224', 'sha256', 'sha384', 'sha512']
 
-parser = argparse.ArgumentParser(description='My Program')
+parser = argparse.ArgumentParser(description='Hash Buster')
 subparsers = parser.add_subparsers(dest='command', help='sub-command help')
 
 parser_brute = subparsers.add_parser('brute', help='Brute force a hash with a Rainbow Table list')
