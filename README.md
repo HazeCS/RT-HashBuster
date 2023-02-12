@@ -63,8 +63,8 @@ In hash mode, Hash Buster will hash a string. To use hash mode, run the followin
 ```
 python3 hashbuster.py hash [-rw] [-t TEXT] -H [hash_algorithm]
     
-    [rw]: Random Word
-    [t]: Text
+    [rw]: (Optional) Random Word
+    [t]: (Optional) Text
     [hash_algoritm]: The hash algorithm to use for the hashing operation
 ```
 
