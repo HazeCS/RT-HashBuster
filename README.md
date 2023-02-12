@@ -88,6 +88,7 @@ Hash Buster requires the following Python modules to be installed:
     argparse
     colorama
     hashlib
+    hashid
 
 ## License
 
