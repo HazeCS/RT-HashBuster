@@ -1,4 +1,4 @@
-import hashlib, argparse, time, json, os
+import hashlib, argparse, time, os
 from random_word import RandomWords
 from colorama import Fore
 
